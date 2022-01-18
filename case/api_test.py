@@ -1,4 +1,4 @@
-# coding = utf-8
+# coding=utf-8
 from datetime import datetime
 import time
 from util.request_util import RequestUtil
