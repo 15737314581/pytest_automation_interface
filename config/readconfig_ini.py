@@ -23,5 +23,5 @@ class ReadConfig(object):
 
 
 if __name__ == '__main__':
-    test = ReadConfig()
+    test = ReadConfig(filepath=os.path.join(os.getcwd(), "../config.ini"))
     print(test.get_db("Mail-Config", "mail_receivers"))

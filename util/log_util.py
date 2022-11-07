@@ -1,6 +1,6 @@
 # coding = utf-8
 import logging
-
+import os
 
 class Log():
     def __init__(self, level=logging.DEBUG):
@@ -38,7 +38,7 @@ class Log():
 
 if __name__ == '__main__':
     log = Log()
-    logger = log.get_log()
+    logger = log.get_log(file='../data/data.log')
     logger.critical('严重错误')
     logger.error('错误')
     logger.warning('警告')
